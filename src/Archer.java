@@ -8,7 +8,7 @@ class Archer implements Warrior, Cloneable {
         this.name = name;
     }
 
-    private Archer(int health, int damage) {
+    private Archer(int health, int damage) { //не используется
         this.health = health;
         this.damage = damage;
     }
@@ -18,11 +18,11 @@ class Archer implements Warrior, Cloneable {
     }
 
     public void takeDamage(int damage) {
-        health-=damage;
+        health-=damage; //желательно в таких случаях разделять операнды и операции пробелами для улучшения читаемости
     }
 
     public boolean isAlive() {
-        return health>0;
+        return health>0; //аналогично
     }
 
     public void setSquadName(String name) {

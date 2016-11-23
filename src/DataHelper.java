@@ -20,7 +20,7 @@ class DataHelper {
         skippedTime+=45;
     }
 
-    String getFormattedDiff() {
+    String getFormattedDiff() { //было бы проще запомнить начало и получить разницу через calendar.add()...
         String diff = "Сражение длилось ";
         int days = 0;
         int hours = 0;

@@ -1,7 +1,7 @@
 class Squad implements Cloneable {
     private String name;
 
-    public String getName() {
+    public String getName() { //сначала поля, потом методы
         return name;
     }
 
